@@ -1,0 +1,141 @@
+date,habit,amount,goal_reached
+2025-03-01,Drink Water,1576.0,No
+2025-03-01,Exercise,19.0,No
+2025-03-01,Meditate,0.0,No
+2025-03-01,Read,10.0,No
+2025-03-01,Sleep 7+ Hours,8.46,Yes
+2025-03-02,Drink Water,1754.0,No
+2025-03-02,Exercise,51.0,Yes
+2025-03-02,Meditate,27.0,Yes
+2025-03-02,Read,34.0,Yes
+2025-03-02,Sleep 7+ Hours,8.55,Yes
+2025-03-03,Drink Water,1160.0,No
+2025-03-03,Exercise,60.0,Yes
+2025-03-03,Meditate,28.0,Yes
+2025-03-03,Read,46.0,Yes
+2025-03-03,Sleep 7+ Hours,8.9,Yes
+2025-03-04,Drink Water,1027.0,No
+2025-03-04,Exercise,11.0,No
+2025-03-04,Meditate,28.0,Yes
+2025-03-04,Read,50.0,Yes
+2025-03-04,Sleep 7+ Hours,6.71,No
+2025-03-05,Drink Water,1359.0,No
+2025-03-05,Exercise,53.0,Yes
+2025-03-05,Meditate,10.0,Yes
+2025-03-05,Read,7.0,No
+2025-03-05,Sleep 7+ Hours,7.31,Yes
+2025-03-06,Drink Water,1906.0,No
+2025-03-06,Exercise,17.0,No
+2025-03-06,Meditate,3.0,No
+2025-03-06,Read,25.0,Yes
+2025-03-06,Sleep 7+ Hours,7.55,Yes
+2025-03-07,Drink Water,2367.0,Yes
+2025-03-07,Exercise,20.0,No
+2025-03-07,Meditate,9.0,No
+2025-03-07,Read,31.0,Yes
+2025-03-07,Sleep 7+ Hours,7.86,Yes
+2025-03-08,Drink Water,2392.0,Yes
+2025-03-08,Exercise,49.0,Yes
+2025-03-08,Meditate,30.0,Yes
+2025-03-08,Read,46.0,Yes
+2025-03-08,Sleep 7+ Hours,7.65,Yes
+2025-03-09,Drink Water,1765.0,No
+2025-03-09,Exercise,58.0,Yes
+2025-03-09,Meditate,6.0,No
+2025-03-09,Read,34.0,Yes
+2025-03-09,Sleep 7+ Hours,6.35,No
+2025-03-10,Drink Water,2353.0,Yes
+2025-03-10,Exercise,34.0,Yes
+2025-03-10,Meditate,21.0,Yes
+2025-03-10,Read,0.0,No
+2025-03-10,Sleep 7+ Hours,8.21,Yes
+2025-03-11,Drink Water,1538.0,No
+2025-03-11,Exercise,47.0,Yes
+2025-03-11,Meditate,29.0,Yes
+2025-03-11,Read,22.0,Yes
+2025-03-11,Sleep 7+ Hours,5.33,No
+2025-03-12,Drink Water,2310.0,Yes
+2025-03-12,Exercise,45.0,Yes
+2025-03-12,Meditate,12.0,Yes
+2025-03-12,Read,36.0,Yes
+2025-03-12,Sleep 7+ Hours,6.82,No
+2025-03-13,Drink Water,2002.0,Yes
+2025-03-13,Exercise,33.0,Yes
+2025-03-13,Meditate,11.0,Yes
+2025-03-13,Read,37.0,Yes
+2025-03-13,Sleep 7+ Hours,5.16,No
+2025-03-14,Drink Water,1536.0,No
+2025-03-14,Exercise,51.0,Yes
+2025-03-14,Meditate,9.0,No
+2025-03-14,Read,20.0,Yes
+2025-03-14,Sleep 7+ Hours,6.88,No
+2025-03-15,Drink Water,1668.0,No
+2025-03-15,Exercise,1.0,No
+2025-03-15,Meditate,17.0,Yes
+2025-03-15,Read,24.0,Yes
+2025-03-15,Sleep 7+ Hours,8.03,Yes
+2025-03-16,Drink Water,1723.0,No
+2025-03-16,Exercise,10.0,No
+2025-03-16,Meditate,8.0,No
+2025-03-16,Read,46.0,Yes
+2025-03-16,Sleep 7+ Hours,5.46,No
+2025-03-17,Drink Water,1463.0,No
+2025-03-17,Exercise,17.0,No
+2025-03-17,Meditate,11.0,Yes
+2025-03-17,Read,19.0,No
+2025-03-17,Sleep 7+ Hours,7.43,Yes
+2025-03-18,Drink Water,1772.0,No
+2025-03-18,Exercise,26.0,No
+2025-03-18,Meditate,0.0,No
+2025-03-18,Read,21.0,Yes
+2025-03-18,Sleep 7+ Hours,8.63,Yes
+2025-03-19,Drink Water,1093.0,No
+2025-03-19,Exercise,28.0,No
+2025-03-19,Meditate,28.0,Yes
+2025-03-19,Read,43.0,Yes
+2025-03-19,Sleep 7+ Hours,7.24,Yes
+2025-03-20,Drink Water,2106.0,Yes
+2025-03-20,Exercise,16.0,No
+2025-03-20,Meditate,5.0,No
+2025-03-20,Read,15.0,No
+2025-03-20,Sleep 7+ Hours,5.16,No
+2025-03-21,Drink Water,1134.0,No
+2025-03-21,Exercise,52.0,Yes
+2025-03-21,Meditate,21.0,Yes
+2025-03-21,Read,47.0,Yes
+2025-03-21,Sleep 7+ Hours,6.27,No
+2025-03-22,Drink Water,1046.0,No
+2025-03-22,Exercise,34.0,Yes
+2025-03-22,Meditate,12.0,Yes
+2025-03-22,Read,21.0,Yes
+2025-03-22,Sleep 7+ Hours,6.79,No
+2025-03-23,Drink Water,2246.0,Yes
+2025-03-23,Exercise,7.0,No
+2025-03-23,Meditate,22.0,Yes
+2025-03-23,Read,7.0,No
+2025-03-23,Sleep 7+ Hours,6.14,No
+2025-03-24,Drink Water,1825.0,No
+2025-03-24,Exercise,53.0,Yes
+2025-03-24,Meditate,1.0,No
+2025-03-24,Read,6.0,No
+2025-03-24,Sleep 7+ Hours,8.81,Yes
+2025-03-25,Drink Water,2094.0,Yes
+2025-03-25,Exercise,24.0,No
+2025-03-25,Meditate,26.0,Yes
+2025-03-25,Read,18.0,No
+2025-03-25,Sleep 7+ Hours,5.79,No
+2025-03-26,Drink Water,1842.0,No
+2025-03-26,Exercise,40.0,Yes
+2025-03-26,Meditate,6.0,No
+2025-03-26,Read,44.0,Yes
+2025-03-26,Sleep 7+ Hours,5.27,No
+2025-03-27,Drink Water,1867.0,No
+2025-03-27,Exercise,40.0,Yes
+2025-03-27,Meditate,14.0,Yes
+2025-03-27,Read,49.0,Yes
+2025-03-27,Sleep 7+ Hours,5.83,No
+2025-03-28,Drink Water,1519.0,No
+2025-03-28,Exercise,60.0,Yes
+2025-03-28,Meditate,26.0,Yes
+2025-03-28,Read,10.0,No
+2025-03-28,Sleep 7+ Hours,6.12,No
