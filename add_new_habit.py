@@ -1,4 +1,4 @@
-#HABIT Tracker
+#HABIT Tracker - dfjior
 
 class Habit:
     def __init__(self, date, description, amount):
