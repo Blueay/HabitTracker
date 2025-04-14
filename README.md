@@ -89,7 +89,7 @@ The architecture can be visualized as follows:
  | add_new_habit.py |    | database.py            |    | habit_analysis.py     |    | test.py               |
  |                  |    |                        |    |                       |    |                       |
  | add_habit()      |    | load_data()            |    | data.shape()          |    | test.continuous_dates |    
- | remove_habit()   |    | combine_data()         |    | data.count()          |    | test.consecutive_dates|
+ | remove_habit()   |    | combine_dataframe()    |    | data.count()          |    | test.consecutive_dates|
  | view_habit()     |    | selected_table()       |    | data.groupby()        |    | test.empty_dates      |
  | total_habit()    |    |                        |    | pivot.goal.count()    |    | test.table_creation   |
  | save_to_csv      |    |                        |    | pivot.goal.avg()      |    | test.data_group_sum   |
