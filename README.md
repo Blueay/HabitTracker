@@ -1,51 +1,161 @@
 # HabitTracker
 
-A habit tracking application designed to help users build and maintain positive routines. It allows users to create habits with customizable frequencies, track their completion, and analyze progress through insightful streak and performance analytics.
+A data-driven habit tracking application designed to help users build, analyze,
+and improve their habits over time. The Habit Tracker monitors habits, provides analytical insights,
+and allows user-friendly data management.
 
-The Habit Tracker application is a Python-based system designed to help users monitor and maintain daily habits effectively. The application enables users to input various habits, store data efficiently, and generate analytical insights regarding their progress. The goal is to encourage consistency and self-improvement through self-monitoring and data-driven analysis.
+---
 
+## Table of Contents
 
-# Content
+- [Installation](#installation)
+- [Usage](#usage)
+- [Module Overview](#module-overview)
+  - [Main Script (`main.py`)](#main-script-mainpy)
+  - [Habit Management (`add_new_habit.py`)](#habit-management-add_new_habitpy)
+  - [Data Management (`download_csv.py`)](#data-management-download_csvpy)
+  - [Analysis Module (`Habit_Analysis.py`)](#analysis-module-habit_analysispy)
+- [Tests (`test_habit_analysis.py`)](#tests-test_habit_analysispy)
+- [Application Architecture](#application-architecture)
+- [Concept](#concept)
+- [Key Features](#key-features)
+- [Future Vision](#future-vision)
+- [Conclusion](#conclusion)
 
-The Habit Tracker is structured with simplicity and modularity in mind and consists of several core modules:
+---
 
-**Data Handler (data_handler.py)**: Manages data storage and retrieval using CSV or SQLite.
+## Installation
 
-**Habit Tracking (main.py)**: The primary interface where users log their habits and track their completion.
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
+2. Install the required dependencies:
+   ```bash
+   pip install pandas
+   ```
+3. Make sure the folder structure is as follows:
+   ```
+   data/
+     - habits.csv
+     - habit_tracking_history_backup.csv
+   main.py
+   add_new_habit.py
+   download_csv.py
+   Habit_Analysis.py
+   test_habit_analysis.py
+   ```
 
-**Analytics (analysis.py)**: Provides insights, including habit streaks, frequency tracking, and goal achievements.
+---
 
-**Utility Functions (utils.py)**: Contains helper functions for formatting and calculations.
+## Usage
 
-**Testing (test/)**: Includes unit tests to ensure the correctness of data handling and analytics.
+To run the program, execute the main script:
 
+```bash
+python main.py
+```
 
-# Concept
+The program provides a menu with the following features:
+1. **Manage Habits**: Add new habits, remove existing ones, and view saved habits.
+2. **Load and Combine Data**: Import CSV data and combine it for analysis.
+3. **Analyze Data**: Get insights such as streak calculations, averages, and total amounts.
+4. **Exit**: Quit the application.
 
-The design philosophy of the Habit Tracker revolves around:
-Ease of Use: A simple command-line interface allows users to input and analyze habits without technical complexity.
-Extensibility: Future enhancements could include a graphical interface, reminders, or habit recommendations.
-Testability: The project includes structured test cases to verify functionality and prevent errors.
+Follow the prompts after selecting a menu option to perform the desired action.
 
+---
 
+## Module Overview
 
-# What Went Well
+The application is modular and consists of independent components that work together seamlessly:
 
-The structured folder organization and modular approach made it easy to develop and maintain. The use of Python’s Pandas library for data analysis simplified the calculations and trend evaluation.
+### Main Script (`main.py`)
+This is the core control and entry point of the application. It includes:
 
-Challenges and Pitfalls
+- **`display_menu()`**: Displays the main menu to the user.
+- **`habit_tracker_menu()`**: Enables the user to add, remove, view, and manage habits.
+- **`analysis_menu()`**: Allows the user to analyze habits, calculate streaks, and view aggregate statistics.
+- **`main()`**: Orchestrates the menu and routes functionality to respective modules.
 
-One challenge was ensuring the correct handling of user inputs and preventing data corruption. Another hurdle was deciding between CSV and SQLite storage, balancing ease of use with scalability.
+---
 
-# Key Features and Innovations
+### Habit Management (`add_new_habit.py`)
 
-Habit Streaks Analysis: The Habit Tracker calculates streaks and identifies consistency trends.
+Defines the functionality for managing individual habits, including:
+- **Class `Habit`**: Represents a single habit with attributes like date, habit name, amount, and goal completion status.
+- **Class `HabitTracker`**: Manages the collection of habits and provides methods to:
+  - `add_habit()`: Add a new habit.
+  - `remove_habit()`: Remove an existing habit.
+  - `view_habit()`: Display all stored habits.
+  - `save_to_csv()`: Save the habits to a CSV file for later reference.
 
-Goal Tracking: Users can set and track personal goals for each habit.
+Habit Management ensures a structured and easy way to keep track of user-defined habits.
 
-Structured Codebase: A modular approach ensures maintainability and expansion.
+---
 
-# Conclusion
+### Data Management (`download_csv.py`)
 
-The Habit Tracker is a useful tool for anyone looking to improve their daily habits. Its clean design, analytical capabilities, and expandability make it a practical project with real-world applications. Future iterations could include notifications, habit difficulty levels, or AI-driven insights to enhance usability and engagement.
+Manages data import and integration from CSV files:
+- **`load_and_combine_data()`**: Reads `habits.csv` (current habits) and `habit_tracking_history_backup.csv` (backup), merges them into a single dataset, and returns it as a Pandas DataFrame.
+- Saves the combined data into a new file, `combined_habit_data.csv`.
 
+Core functionality includes:
+- Calculating averages and maximum values.
+- Filtering data for specific habits (e.g., "Exercise").
+- Efficient merging of habit data for long-term tracking.
+
+---
+
+### Analysis Module (`Habit_Analysis.py`)
+
+Provides advanced analytics for habits:
+- **`compute_streak(habit, habit_dates)`**: Computes streaks for habits (i.e., the longest consecutive days a habit is completed).
+- Calculates aggregate sums, averages, and filtered datasets for individual or grouped habits (e.g., "Meditation").
+- Identifies goal completion trends across all recorded habits.
+
+This module adds data-driven insights for better habit formation and monitoring.
+
+---
+
+## Tests (`test_habit_analysis.py`)
+
+The test suite ensures the correctness and reliability of the Habit Tracker's analytics. It focuses on the core functions of streak calculation, data aggregation, and summary statistics. Below are the main components of the test file:
+
+- **`habit_data()`**: Generates mock data for testing purposes.
+- **`test_compute_streak_with_continuous_dates()`**: Validates streak calculations for continuous (consecutive) habit dates.
+- **`test_compute_streak_with_non_consecutive_dates()`**: Ensures streaks are calculated correctly when habit dates are not consecutive.
+- **`test_compute_streak_with_empty_dates()`**: Checks streak computation with an empty set of dates.
+- **`test_pivot_table_creation()`**: Tests the creation of pivot tables for habit summaries.
+- **`test_data_grouping_and_summary()`**: Verifies that data grouping and summary statistics (totals, averages) run correctly.
+- **`test_streak_from_habit_data()`**: End-to-end test to verify streak analytics directly from habit data.
+
+To run the tests, you can use Python's built-in unittest framework or another testing tool like `pytest`:
+
+```bash
+python -m unittest test_habit_analysis.py
+```
+
+These tests ensure the robustness of all analytical features.
+
+---
+
+## Application Architecture
+
+The Habit Tracker application is designed with a modular architecture to ensure simplicity, scalability, and maintainability. Each module handles a specific aspect of functionality, making it easier to extend and debug. The architecture can be visualized as follows:
+                                   +----------------------------+
+                                           | main.py |
+                                   +----------------------------+
+                                               |
+        +------------------------+-------------------------------+--------------------------+
+        |                        |                               |                          |
+ +------------------+    +------------------------+    +-----------------------+    +-----------------------+
+ | add_new_habit.py |    | database.py            |    | habit_analysis.py     |    | test.py               |
+ |                  |    |                        |    |                       |    |                       |
+ | add_habit()      |    | load_data()            |    | data.shape()          |    | test.continuous_dates |    
+ | remove_habit()   |    | combine_data()         |    | data.count()          |    | test.consecutive_dates|
+ | view_habit()     |    | selected_table()       |    | data.groupby()        |    | test.empty_dates      |
+ | total_habit()    |    |                        |    | pivot.goal.count()    |    | test.table_creation   |
+ | exit             |    |                        |    | pivot.goal.avg()      |    | test.data_group_sum   |
+ |                  |    |                        |    | streak.computation()  |    | test.streak_habit     |
+ +------------------+    +------------------------+    +-----------------------+    +-----------------------+

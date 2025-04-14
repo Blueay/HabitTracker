@@ -34,28 +34,21 @@ if __name__ == "__main__":
     print(combined)
 
 
-print(type(combined))
-print(combined)
+    print(type(combined))
+    print(combined)
 
 # Convert into dictionary
 #data_dict = combined.to_dict()
 #print(data_dict)
 
-#Calculate statistics
-average_amount = combined["amount"].mean()
-print("the average amount is:", (average_amount))
-
-max_amount = combined["amount"].max()
-print("the max amount is:", (max_amount))
-
-# selected filtered data (optional)
-print(combined[combined["habit_name"] == "Exercise"])
+# selected filtered data (optional) as SELECTED TABLE
+    print(combined[combined["habit_name"] == "Exercise"])
 
 #Get combined data in Row
-print(combined[combined.goal_reached == "True"])
+    print(combined[combined.goal_reached == "True"])
 
 
 # Safe the combined Data as a DataFrame in combined new data file:
 
-combined.to_csv("combined_habit_data.csv", index=False)
+    combined.to_csv("data/combined_habit_data.csv", index=False)
 
