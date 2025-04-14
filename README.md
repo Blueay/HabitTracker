@@ -80,8 +80,7 @@ The Habit Tracker application is designed with a modular architecture to ensure 
 maintainability. Each module handles a specific aspect of functionality, making it easier to extend and debug.
 The architecture can be visualized as follows:
 
-Structure
-![](/Users/linbot/PycharmProjects/HabitTracker/data/structure_habit_tracker.png "App Architecture")
+![Image Alt](https://github.com/Blueay/HabitTracker/blob/main/APP%20STRUCTURE.png?raw=true)
 
 
 
