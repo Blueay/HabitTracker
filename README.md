@@ -79,6 +79,8 @@ Follow the prompts after selecting a menu option to perform the desired action.
 The Habit Tracker application is designed with a modular architecture to ensure simplicity, scalability, and 
 maintainability. Each module handles a specific aspect of functionality, making it easier to extend and debug.
 The architecture can be visualized as follows:
+
+https://private-user-images.githubusercontent.com/83540785/433455583-fc266200-149e-4d0b-980a-fd848f06d1b3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQ2NDcwMDcsIm5iZiI6MTc0NDY0NjcwNywicGF0aCI6Ii84MzU0MDc4NS80MzM0NTU1ODMtZmMyNjYyMDAtMTQ5ZS00ZDBiLTk4MGEtZmQ4NDhmMDZkMWIzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA0MTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNDE0VDE2MDUwN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTYwNzg2ZDY2YjBmMWExYzQyNzI3ODMyOTdlMTZkZmUxMWY5YjZjZTE4YWMxMDRlZjdiMzdmN2QxYzA4ODlhMGQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.gSqlAzDIHLCH6bPjInLj5XJolHIO4gJgsFczp6Gv2wI
                               
 <img height="20" src="/Users/linbot/PycharmProjects/HabitTracker/data/structure_habit_tracker.png" title="App Architecture" width="20"/>
 
