@@ -23,8 +23,8 @@ and allows user-friendly data management.
 - [Module Overview](#module-overview)
   - [Main Script (`main.py`)](#main-script-mainpy)
   - [Habit Management (`add_new_habit.py`)](#habit-management-add_new_habitpy)
-  - [Data Management (`download_csv.py`)](#data-management-download_csvpy)
-  - [Analysis Module (`Habit_Analysis.py`)](#analysis-module-habit_analysispy)
+  - [Data Management (`database.py`)](#data-management-databasepy)
+  - [Analysis Module (`habit_analysis.py`)](#analysis-module-habit_analysispy)
 - [Tests (`test_habit_analysis.py`)](#tests-test_habit_analysispy)
 
 ---
