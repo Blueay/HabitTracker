@@ -26,9 +26,6 @@ and allows user-friendly data management.
   - [Data Management (`download_csv.py`)](#data-management-download_csvpy)
   - [Analysis Module (`Habit_Analysis.py`)](#analysis-module-habit_analysispy)
 - [Tests (`test_habit_analysis.py`)](#tests-test_habit_analysispy)
-- [Concept](#concept)
-- [Key Features](#key-features)
-- [Conclusion](#conclusion)
 
 ---
 
