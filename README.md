@@ -1,5 +1,14 @@
 # HabitTracker
 
+Hello!
+
+I built this app while learning Object Oriented and Functional Programming with Python and working on an assignment at IU University in April 2025. Luckily, I had some help from ChatGPT—which made learning to code (and getting things to actually work) a lot easier and more fun.
+
+The app isn’t fully finished yet—things like a proper GUI and bonus points are still on the to-do list. But overall, it was a cool little project to dive into, and I learned a lot along the way.
+
+
+------
+## All-in-All
 A data-driven habit tracking application designed to help users build, analyze,
 and improve their habits over time. The Habit Tracker monitors habits, provides analytical insights,
 and allows user-friendly data management.
@@ -10,6 +19,7 @@ and allows user-friendly data management.
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [Application Architecture](#application-architecture)
 - [Module Overview](#module-overview)
   - [Main Script (`main.py`)](#main-script-mainpy)
   - [Habit Management (`add_new_habit.py`)](#habit-management-add_new_habitpy)
@@ -19,7 +29,6 @@ and allows user-friendly data management.
 - [Application Architecture](#application-architecture)
 - [Concept](#concept)
 - [Key Features](#key-features)
-- [Future Vision](#future-vision)
 - [Conclusion](#conclusion)
 
 ---
@@ -41,8 +50,8 @@ and allows user-friendly data management.
      - habit_tracking_history_backup.csv
    main.py
    add_new_habit.py
-   download_csv.py
-   Habit_Analysis.py
+   database.py
+   habit_analysis.py
    test_habit_analysis.py
    ```
 
@@ -63,6 +72,29 @@ The program provides a menu with the following features:
 4. **Exit**: Quit the application.
 
 Follow the prompts after selecting a menu option to perform the desired action.
+
+
+## Application Architecture
+
+The Habit Tracker application is designed with a modular architecture to ensure simplicity, scalability, and 
+maintainability. Each module handles a specific aspect of functionality, making it easier to extend and debug.
+The architecture can be visualized as follows:
+                                   +----------------------------+
+                                           | main.py |
+                                   +----------------------------+
+                                               |
+        +------------------------+-------------------------------+--------------------------+
+        |                        |                               |                          |
+ +------------------+    +------------------------+    +-----------------------+    +-----------------------+
+ | add_new_habit.py |    | database.py            |    | habit_analysis.py     |    | test.py               |
+ |                  |    |                        |    |                       |    |                       |
+ | add_habit()      |    | load_data()            |    | data.shape()          |    | test.continuous_dates |    
+ | remove_habit()   |    | combine_data()         |    | data.count()          |    | test.consecutive_dates|
+ | view_habit()     |    | selected_table()       |    | data.groupby()        |    | test.empty_dates      |
+ | total_habit()    |    |                        |    | pivot.goal.count()    |    | test.table_creation   |
+ | save_to_csv      |    |                        |    | pivot.goal.avg()      |    | test.data_group_sum   |
+ |                  |    |                        |    | streak.computation()  |    | test.streak_habit     |
+ +------------------+    +------------------------+    +-----------------------+    +-----------------------+
 
 ---
 
@@ -94,7 +126,7 @@ Habit Management ensures a structured and easy way to keep track of user-defined
 
 ---
 
-### Data Management (`download_csv.py`)
+### Data Management (`database.py`)
 
 Manages data import and integration from CSV files:
 - **`load_and_combine_data()`**: Reads `habits.csv` (current habits) and `habit_tracking_history_backup.csv` (backup), merges them into a single dataset, and returns it as a Pandas DataFrame.
@@ -107,7 +139,7 @@ Core functionality includes:
 
 ---
 
-### Analysis Module (`Habit_Analysis.py`)
+### Analysis Module (`habit_analysis.py`)
 
 Provides advanced analytics for habits:
 - **`compute_streak(habit, habit_dates)`**: Computes streaks for habits (i.e., the longest consecutive days a habit is completed).
@@ -139,23 +171,3 @@ python -m unittest test_habit_analysis.py
 These tests ensure the robustness of all analytical features.
 
 ---
-
-## Application Architecture
-
-The Habit Tracker application is designed with a modular architecture to ensure simplicity, scalability, and maintainability. Each module handles a specific aspect of functionality, making it easier to extend and debug. The architecture can be visualized as follows:
-                                   +----------------------------+
-                                           | main.py |
-                                   +----------------------------+
-                                               |
-        +------------------------+-------------------------------+--------------------------+
-        |                        |                               |                          |
- +------------------+    +------------------------+    +-----------------------+    +-----------------------+
- | add_new_habit.py |    | database.py            |    | habit_analysis.py     |    | test.py               |
- |                  |    |                        |    |                       |    |                       |
- | add_habit()      |    | load_data()            |    | data.shape()          |    | test.continuous_dates |    
- | remove_habit()   |    | combine_data()         |    | data.count()          |    | test.consecutive_dates|
- | view_habit()     |    | selected_table()       |    | data.groupby()        |    | test.empty_dates      |
- | total_habit()    |    |                        |    | pivot.goal.count()    |    | test.table_creation   |
- | exit             |    |                        |    | pivot.goal.avg()      |    | test.data_group_sum   |
- |                  |    |                        |    | streak.computation()  |    | test.streak_habit     |
- +------------------+    +------------------------+    +-----------------------+    +-----------------------+
