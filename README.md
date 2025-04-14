@@ -95,6 +95,9 @@ The architecture can be visualized as follows:
  | save_to_csv      |    |                        |    | pivot.goal.avg()      |    | test.data_group_sum   |
  |                  |    |                        |    | streak.computation()  |    | test.streak_habit     |
  +------------------+    +------------------------+    +-----------------------+    +-----------------------+
+<img height="20" src="/Users/linbot/PycharmProjects/HabitTracker/data/structure_habit_tracker.png" title="App Architecture" width="20"/>
+
+
 
 ---
 
