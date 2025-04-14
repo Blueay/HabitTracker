@@ -1,0 +1,88 @@
+date,habit_name,amount,goal_reached
+2025-03-01,Drink Water,1773,No
+2025-03-01,Read,27,True
+2025-03-01,Exercise,33,True
+2025-03-01,Meditation,13,True
+2025-03-02,Drink Water,1757,No
+2025-03-02,Meditation,7,No
+2025-03-03,Drink Water,2184,True
+2025-03-03,Read,25,True
+2025-03-03,Exercise,56,True
+2025-03-04,Drink Water,1708,No
+2025-03-04,Exercise,46,True
+2025-03-05,Drink Water,2155,True
+2025-03-05,Read,30,True
+2025-03-05,Exercise,35,True
+2025-03-05,Meditation,12,True
+2025-03-06,Drink Water,1923,True
+2025-03-06,Exercise,29,No
+2025-03-06,Meditation,13,True
+2025-03-06,Sleep,8,No
+2025-03-07,Drink Water,1609,No
+2025-03-07,Read,11,True
+2025-03-07,Exercise,23,No
+2025-03-07,Meditation,19,True
+2025-03-08,Drink Water,2106,True
+2025-03-08,Read,28,True
+2025-03-08,Exercise,49,True
+2025-03-08,Meditation,16,True
+2025-03-09,Drink Water,1563,No
+2025-03-09,Read,9,No
+2025-03-09,Sleep,8,True
+2025-03-10,Drink Water,1731,No
+2025-03-10,Meditation,9,No
+2025-03-11,Drink Water,1528,No
+2025-03-11,Read,28,True
+2025-03-11,Meditation,12,True
+2025-03-12,Drink Water,1971,True
+2025-03-12,Read,6,No
+2025-03-12,Meditation,11,True
+2025-03-13,Drink Water,2113,True
+2025-03-13,Read,14,True
+2025-03-14,Drink Water,1798,No
+2025-03-14,Read,20,True
+2025-03-14,Meditation,18,True
+2025-03-15,Drink Water,1957,True
+2025-03-15,Read,16,True
+2025-03-15,Meditation,17,True
+2025-03-16,Drink Water,1738,No
+2025-03-16,Exercise,43,True
+2025-03-16,Meditation,17,True
+2025-03-17,Drink Water,2047,True
+2025-03-17,Exercise,34,True
+2025-03-17,Meditation,18,True
+2025-03-17,Sleep,5,True
+2025-03-18,Drink Water,1524,No
+2025-03-18,Read,18,True
+2025-03-19,Drink Water,1864,True
+2025-03-19,Read,10,True
+2025-03-19,Meditation,5,No
+2025-03-20,Drink Water,1523,No
+2025-03-20,Read,11,True
+2025-03-21,Drink Water,1796,No
+2025-03-21,Read,29,True
+2025-03-21,Meditation,15,True
+2025-03-22,Drink Water,1546,No
+2025-03-22,Meditation,12,True
+2025-03-22,Sleep,9,True
+2025-03-23,Drink Water,1667,No
+2025-03-23,Read,29,True
+2025-03-23,Meditation,10,True
+2025-03-24,Drink Water,1828,True
+2025-03-24,Read,27,True
+2025-03-24,Exercise,24,No
+2025-03-24,Meditation,11,True
+2025-03-25,Drink Water,1599,No
+2025-03-25,Read,14,True
+2025-03-25,Exercise,23,No
+2025-03-25,Sleep,7,True
+2025-03-26,Drink Water,2015,True
+2025-03-26,Read,5,No
+2025-03-26,Meditation,7,No
+2025-03-27,Drink Water,2035,True
+2025-03-27,Read,28,True
+2025-03-27,Meditation,10,True
+2025-03-27,Sleep,10,True
+2025-03-28,Drink Water,1735,No
+2025-03-28,Read,21,True
+2025-03-28,Exercise,54,True
