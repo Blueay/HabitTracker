@@ -79,8 +79,8 @@ Follow the prompts after selecting a menu option to perform the desired action.
 The Habit Tracker application is designed with a modular architecture to ensure simplicity, scalability, and 
 maintainability. Each module handles a specific aspect of functionality, making it easier to extend and debug.
 The architecture can be visualized as follows:
-                              
-<img height="20" src="/Users/linbot/PycharmProjects/HabitTracker/data/structure_habit_tracker.png" title="App Architecture" width="20"/>
+
+![](/Users/linbot/PycharmProjects/HabitTracker/data/structure_habit_tracker.png "App Architecture")
 
 
 
