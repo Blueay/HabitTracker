@@ -79,22 +79,7 @@ Follow the prompts after selecting a menu option to perform the desired action.
 The Habit Tracker application is designed with a modular architecture to ensure simplicity, scalability, and 
 maintainability. Each module handles a specific aspect of functionality, making it easier to extend and debug.
 The architecture can be visualized as follows:
-                                   +----------------------------+
-                                           | main.py |
-                                   +----------------------------+
-                                               |
-        +------------------------+-------------------------------+--------------------------+
-        |                        |                               |                          |
- +------------------+    +------------------------+    +-----------------------+    +-----------------------+
- | add_new_habit.py |    | database.py            |    | habit_analysis.py     |    | test.py               |
- |                  |    |                        |    |                       |    |                       |
- | add_habit()      |    | load_data()            |    | data.shape()          |    | test.continuous_dates |    
- | remove_habit()   |    | combine_dataframe()    |    | data.count()          |    | test.consecutive_dates|
- | view_habit()     |    | selected_table()       |    | data.groupby()        |    | test.empty_dates      |
- | total_habit()    |    |                        |    | pivot.goal.count()    |    | test.table_creation   |
- | save_to_csv      |    |                        |    | pivot.goal.avg()      |    | test.data_group_sum   |
- |                  |    |                        |    | streak.computation()  |    | test.streak_habit     |
- +------------------+    +------------------------+    +-----------------------+    +-----------------------+
+                              
 <img height="20" src="/Users/linbot/PycharmProjects/HabitTracker/data/structure_habit_tracker.png" title="App Architecture" width="20"/>
 
 
